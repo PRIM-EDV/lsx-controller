@@ -1,1 +1,11 @@
-node_modules/
+# Built ts files
+dist/**/*
+
+# Log files
+logs/
+
+# Build files
+build/**/*
+
+# Dependency directory
+node_modules

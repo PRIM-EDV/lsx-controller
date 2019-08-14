@@ -4,6 +4,8 @@
   "description": "Light and Sound controller.",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:dev": "tsc-watch -p tsconfig.json --onSuccess \"node dist/main.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,13 +23,18 @@
     "@nestjs/core": "^6.0.4",
     "@nestjs/microservices": "^6.0.4",
     "@nestjs/platform-express": "^6.0.4",
+    "@nestjs/platform-socket.io": "^6.5.3",
     "@nestjs/websockets": "^6.0.4",
     "reflect-metadata": "0.1.13",
-    "rxjs": "6.4.0"
+    "rxjs": "6.4.0",
+    "winston": "^3.2.1",
+    "ws": "^7.1.2"
   },
   "devDependencies": {
     "@types/express": "4.16.1",
     "@types/node": "11.13.4",
+    "@types/socket.io": "^2.1.2",
+    "@types/ws": "^6.0.2",
     "ts-node": "8.1.0",
     "tsc-watch": "2.2.1",
     "tsconfig-paths": "3.8.0",
